@@ -46,10 +46,13 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 import rosegraphics as rg
 window = rg.TurtleWindow()
 my_turtle = rg.SimpleTurtle('turtle')
-rg.Pen('blue')
+my_turtle.pen = rg.Pen('blue', 5)
+my_turtle.right(270)
 my_turtle.forward(200)
 my_turtle.pen_up()
 my_turtle.go_to(rg.Point(100, -40))
 my_turtle.pen_down()
-rg.Pen('green', 10)
+my_turtle.pen = rg.Pen('green', 10)
 my_turtle.backward(150)
+
+window.close_on_mouse_click()
