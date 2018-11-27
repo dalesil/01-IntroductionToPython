@@ -5,7 +5,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Aaron Wilkin, their colleagues, and Lucas D'Alesio.
 """
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
@@ -15,7 +15,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Write code that accomplishes the following (and ONLY the following),
 #   in the order listed:
 #
-#    - Constructs a SimpleTurtle with a  'blue'  Pen.
+#    - Constructs a SimpleTurtle ith a  'blue'  Pen.w
 #
 #    - Makes the SimpleTurtle go straight UP 200 pixels.
 #
@@ -43,3 +43,13 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   As always, COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+my_turtle = rg.SimpleTurtle('turtle')
+rg.Pen('blue')
+my_turtle.forward(200)
+my_turtle.pen_up()
+my_turtle.go_to(rg.Point(100, -40))
+my_turtle.pen_down()
+rg.Pen('green', 10)
+my_turtle.backward(150)

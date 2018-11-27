@@ -54,3 +54,5 @@ for k in range(20):
     green_turtle.backward(100)
     green_turtle.pen_down()
     size = size - 20
+
+window.close_on_mouse_click()
